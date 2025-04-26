@@ -1,0 +1,108 @@
+.profileContainer {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.profileHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.profileHeader h1 {
+  color: #324d67;
+  font-size: 2rem;
+}
+
+.homeButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: #f02d34;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.homeButton:hover {
+  background-color: #d02029;
+  transform: translateY(-2px);
+}
+
+.profileContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+}
+
+.userInfo {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.infoCard {
+  margin-top: 1rem;
+}
+
+.infoCard p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.orderHistory {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.orderCard {
+  border: 1px solid #eaeaea;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.orderHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.orderStatus {
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  background: #e6f3ff;
+  color: #0066cc;
+  font-size: 0.875rem;
+}
+
+.orderDetails {
+  color: #666;
+}
+
+.orderDetails p {
+  margin: 0.25rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .profileContent {
+    grid-template-columns: 1fr;
+  }
+
+  .userInfo,
+  .orderHistory {
+    margin-bottom: 1rem;
+  }
+}

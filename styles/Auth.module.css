@@ -1,1 +1,79 @@
+.authContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
 
+.authForm {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.authForm h1 {
+  text-align: center;
+  color: #324d67;
+  margin-bottom: 2rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #324d67;
+}
+
+.formGroup input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background: white;
+}
+
+.formGroup input:-webkit-autofill,
+.formGroup input:-webkit-autofill:hover,
+.formGroup input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.authButton {
+  width: 100%;
+  padding: 1rem;
+  background: #f02d34;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.switchButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: none;
+  border: 1px solid #f02d34;
+  color: #f02d34;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.authButton:hover {
+  background-color: #d02029;
+}
+
+.switchButton:hover {
+  background-color: #fff5f5;
+}
